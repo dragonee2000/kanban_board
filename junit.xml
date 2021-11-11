@@ -1,0 +1,120 @@
+<testsuites name="jest tests" tests="6" failures="6" time="1.526">
+  <testsuite name="undefined" errors="0" failures="6" skipped="0" timestamp="2021-11-11T02:24:46" time="1.526" tests="6">
+    <testcase classname=" Renders all columns with heading" name=" Renders all columns with heading" time="0.028">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;stage-0&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;h1&gt;
+        Kanban board
+      &lt;/h1&gt;
+      &lt;div
+        style=&quot;display: flex;&quot;
+      /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:75:17)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    </testcase>
+    <testcase classname=" Renders certain set of tasks" name=" Renders certain set of tasks" time="0.003">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;stage-0&quot;]
+
+&lt;div&gt;
+  &lt;div
+    class=&quot;App&quot;
+  &gt;
+    &lt;h1&gt;
+      Kanban board
+    &lt;/h1&gt;
+    &lt;div
+      style=&quot;display: flex;&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:84:39)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    </testcase>
+    <testcase classname=" Adding Tasks" name=" Adding Tasks" time="0.008">
+      <failure>Error: expect(received).toBeVisible()
+
+received value must be an HTMLElement or an SVGElement.
+Received has value: undefined
+    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:102:3)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    </testcase>
+    <testcase classname=" Selecting and Deselecting Tasks" name=" Selecting and Deselecting Tasks" time="0.002">
+      <failure>Error: expect(received).toBeVisible()
+
+received value must be an HTMLElement or an SVGElement.
+Received has value: undefined
+    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:112:3)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    </testcase>
+    <testcase classname=" Deleting Tasks" name=" Deleting Tasks" time="0.002">
+      <failure>Error: expect(received).toBeVisible()
+
+received value must be an HTMLElement or an SVGElement.
+Received has value: undefined
+    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:128:3)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    </testcase>
+    <testcase classname=" Moving Tasks" name=" Moving Tasks" time="0.003">
+      <failure>Error: expect(received).toBeVisible()
+
+received value must be an HTMLElement or an SVGElement.
+Received has value: undefined
+    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:144:3)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
