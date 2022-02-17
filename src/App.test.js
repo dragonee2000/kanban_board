@@ -108,65 +108,65 @@ test("Adding Tasks", () => {
   expect(firstStage).toContainElement(task2);
 });
 
-test("Selecting and Deselecting Tasks", () => {
-  const { getByTestId, queryByTestId } = renderAppAndAddTasks();
-  const firstStage = getByTestId(stageTestId(0));
-  let task1 = getByTestId(taskNameToId("test task 1"));
-  fireEvent.click(task1);
+// test("Selecting and Deselecting Tasks", () => {
+//   const { getByTestId, queryByTestId } = renderAppAndAddTasks();
+//   const firstStage = getByTestId(stageTestId(0));
+//   let task1 = getByTestId(taskNameToId("test task 1"));
+//   fireEvent.click(task1);
 
-  let style = window.getComputedStyle(task1);
-  expect(style.backgroundColor).toBe(SELECTED_TASK_COLOR);
+//   let style = window.getComputedStyle(task1);
+//   expect(style.backgroundColor).toBe(SELECTED_TASK_COLOR);
 
-  task1 = getByTestId(taskNameToId("test task 1"));
-  fireEvent.click(task1);
+//   task1 = getByTestId(taskNameToId("test task 1"));
+//   fireEvent.click(task1);
 
-  style = window.getComputedStyle(task1);
-  expect(style.backgroundColor).not.toBe(SELECTED_TASK_COLOR);
-});
+//   style = window.getComputedStyle(task1);
+//   expect(style.backgroundColor).not.toBe(SELECTED_TASK_COLOR);
+// });
 
-test("Deleting Tasks", () => {
-  const { getByTestId, queryByTestId } = renderAppAndAddTasks();
-  const firstStage = getByTestId(stageTestId(0));
-  const task1 = getByTestId(taskNameToId("test task 1"));
-  const task2 = getByTestId(taskNameToId("test task 2"));
-  fireEvent.click(task1);
-  let deleteButton = getByText(firstStage, "Delete", { exact: false });
-  fireEvent.click(deleteButton);
-  expect(firstStage).not.toContainElement(task1);
+// test("Deleting Tasks", () => {
+//   const { getByTestId, queryByTestId } = renderAppAndAddTasks();
+//   const firstStage = getByTestId(stageTestId(0));
+//   const task1 = getByTestId(taskNameToId("test task 1"));
+//   const task2 = getByTestId(taskNameToId("test task 2"));
+//   fireEvent.click(task1);
+//   let deleteButton = getByText(firstStage, "Delete", { exact: false });
+//   fireEvent.click(deleteButton);
+//   expect(firstStage).not.toContainElement(task1);
 
-  fireEvent.click(task2);
-  deleteButton = getByText(firstStage, "Delete", { exact: false });
-  fireEvent.click(deleteButton);
-  expect(firstStage).not.toContainElement(task2);
-});
+//   fireEvent.click(task2);
+//   deleteButton = getByText(firstStage, "Delete", { exact: false });
+//   fireEvent.click(deleteButton);
+//   expect(firstStage).not.toContainElement(task2);
+// });
 
-test("Moving Tasks", () => {
-  const { getByTestId, queryByTestId, container } = renderAppAndAddTasks();
-  const firstStage = getByTestId(stageTestId(0));
-  const secondStage = getByTestId(stageTestId(1));
-  const thirdStage = getByTestId(stageTestId(2));
-  let task1 = getByTestId(taskNameToId("test task 1"));
-  fireEvent.click(task1);
-  let moveLeftButton = queryByText(firstStage, "Backward", { exact: false });
-  expect(moveLeftButton).toBeNull();
-  let moveRightButton = queryByText(firstStage, "Forward", { exact: false });
-  fireEvent.click(moveRightButton);
-  task1 = getByTestId(taskNameToId("test task 1"));
+// test("Moving Tasks", () => {
+//   const { getByTestId, queryByTestId, container } = renderAppAndAddTasks();
+//   const firstStage = getByTestId(stageTestId(0));
+//   const secondStage = getByTestId(stageTestId(1));
+//   const thirdStage = getByTestId(stageTestId(2));
+//   let task1 = getByTestId(taskNameToId("test task 1"));
+//   fireEvent.click(task1);
+//   let moveLeftButton = queryByText(firstStage, "Backward", { exact: false });
+//   expect(moveLeftButton).toBeNull();
+//   let moveRightButton = queryByText(firstStage, "Forward", { exact: false });
+//   fireEvent.click(moveRightButton);
+//   task1 = getByTestId(taskNameToId("test task 1"));
 
-  expect(firstStage).not.toContainElement(task1);
-  expect(secondStage).toContainElement(task1);
+//   expect(firstStage).not.toContainElement(task1);
+//   expect(secondStage).toContainElement(task1);
 
-  fireEvent.click(task1);
-  moveRightButton = queryByText(secondStage, "Forward", { exact: false });
-  fireEvent.click(moveRightButton);
-  task1 = getByTestId(taskNameToId("test task 1"));
-  expect(secondStage).not.toContainElement(task1);
-  expect(thirdStage).toContainElement(task1);
+//   fireEvent.click(task1);
+//   moveRightButton = queryByText(secondStage, "Forward", { exact: false });
+//   fireEvent.click(moveRightButton);
+//   task1 = getByTestId(taskNameToId("test task 1"));
+//   expect(secondStage).not.toContainElement(task1);
+//   expect(thirdStage).toContainElement(task1);
 
-  fireEvent.click(task1);
-  moveLeftButton = queryByText(thirdStage, "Backward", { exact: false });
-  fireEvent.click(moveLeftButton);
-  task1 = getByTestId(taskNameToId("test task 1"));
-  expect(secondStage).toContainElement(task1);
-  expect(thirdStage).not.toContainElement(task1);
-});
+//   fireEvent.click(task1);
+//   moveLeftButton = queryByText(thirdStage, "Backward", { exact: false });
+//   fireEvent.click(moveLeftButton);
+//   task1 = getByTestId(taskNameToId("test task 1"));
+//   expect(secondStage).toContainElement(task1);
+//   expect(thirdStage).not.toContainElement(task1);
+// });

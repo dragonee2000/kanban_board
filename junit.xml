@@ -1,7 +1,13 @@
-<testsuites name="jest tests" tests="6" failures="6" time="1.526">
-  <testsuite name="undefined" errors="0" failures="6" skipped="0" timestamp="2021-11-11T02:24:46" time="1.526" tests="6">
-    <testcase classname=" Renders all columns with heading" name=" Renders all columns with heading" time="0.028">
-      <failure>Error: Unable to find an element by: [data-testid=&quot;stage-0&quot;]
+<testsuites name="jest tests" tests="3" failures="1" time="1.345">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2022-02-17T18:38:03" time="1.345" tests="3">
+    <testcase classname=" Renders all columns with heading" name=" Renders all columns with heading" time="0.017">
+    </testcase>
+    <testcase classname=" Renders certain set of tasks" name=" Renders certain set of tasks" time="0.004">
+    </testcase>
+    <testcase classname=" Adding Tasks" name=" Adding Tasks" time="0.014">
+      <failure>Error: Found multiple elements with the placeholder text of: Task Name
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
 
 &lt;body&gt;
   &lt;div&gt;
@@ -13,108 +19,146 @@
       &lt;/h1&gt;
       &lt;div
         style=&quot;display: flex;&quot;
-      /&gt;
+      &gt;
+        &lt;div
+          class=&quot;bp3-card bp3-elevation-0&quot;
+        &gt;
+          &lt;div
+            data-testid=&quot;stage-0&quot;
+          &gt;
+            Backlog
+            &lt;div
+              data-testid=&quot;task-task-1&quot;
+            &gt;
+              task 1
+            &lt;/div&gt;
+            &lt;div
+              data-testid=&quot;task-task-2&quot;
+            &gt;
+              task 2
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;bp3-input-group&quot;
+            &gt;
+              &lt;input
+                class=&quot;bp3-input&quot;
+                placeholder=&quot;Task Name&quot;
+                style=&quot;padding-right: 0px;&quot;
+                type=&quot;text&quot;
+              /&gt;
+              &lt;span
+                class=&quot;bp3-input-action&quot;
+              &gt;
+                &lt;button
+                  class=&quot;bp3-button bp3-minimal&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;span
+                    class=&quot;bp3-button-text&quot;
+                  &gt;
+                    Confirm
+                  &lt;/span&gt;
+                &lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;bp3-card bp3-elevation-0&quot;
+        &gt;
+          &lt;div
+            data-testid=&quot;stage-1&quot;
+          &gt;
+            To Do
+            &lt;div
+              data-testid=&quot;task-task-3&quot;
+            &gt;
+              task 3
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;bp3-input-group&quot;
+            &gt;
+              &lt;input
+                class=&quot;bp3-input&quot;
+                placeholder=&quot;Task Name&quot;
+                style=&quot;padding-right: 0px;&quot;
+                type=&quot;text&quot;
+              /&gt;
+              &lt;span
+                class=&quot;bp3-input-action&quot;
+              &gt;
+                &lt;button
+                  class=&quot;bp3-button bp3-minimal&quot;
+                  type=&quot;button&quot;
+                &gt;
+                  &lt;span
+                    class=&quot;bp3-button-text&quot;
+                  &gt;
+                    Confirm
+                  &lt;/span&gt;
+                &lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;bp3-card bp3-elevation-0&quot;
+        &gt;
+          &lt;div
+            data-testid=&quot;stage-2&quot;
+          &gt;
+            Ongoing
+            &lt;div
+              data-testid=&quot;task-task-4&quot;
+            &gt;
+              task 4
+            &lt;/div&gt;
+            &lt;button
+              class=&quot;bp3-button&quot;
+              type=&quot;button&quot;
+            &gt;
+              &lt;span
+                class=&quot;bp3-button-text&quot;
+              &gt;
+                Add Task
+              &lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          class=&quot;bp3-card bp3-elevation-0&quot;
+        &gt;
+          &lt;div
+            data-testid=&quot;stage-3&quot;
+          &gt;
+            Done
+            &lt;button
+              class=&quot;bp3-button&quot;
+              type=&quot;button&quot;
+            &gt;
+              &lt;span
+                class=&quot;bp3-button-text&quot;
+              &gt;
+                Add Task
+              &lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/body&gt;
-    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:75:17)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at getElementError (/Users/dragonee/Desktop/Test/Kanban/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at getMultipleElementsFoundError (/Users/dragonee/Desktop/Test/Kanban/node_modules/@testing-library/dom/dist/query-helpers.js:50:10)
+    at /Users/dragonee/Desktop/Test/Kanban/node_modules/@testing-library/dom/dist/query-helpers.js:86:13
+    at renderAppAndAddTasks (/Users/dragonee/Desktop/Test/Kanban/src/App.test.js:59:29)
+    at Object.&lt;anonymous&gt; (/Users/dragonee/Desktop/Test/Kanban/src/App.test.js:102:3)
+    at Object.asyncFn (/Users/dragonee/Desktop/Test/Kanban/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at /Users/dragonee/Desktop/Test/Kanban/node_modules/jest-jasmine2/build/queueRunner.js:38:12
     at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
-    </testcase>
-    <testcase classname=" Renders certain set of tasks" name=" Renders certain set of tasks" time="0.003">
-      <failure>Error: Unable to find an element by: [data-testid=&quot;stage-0&quot;]
-
-&lt;div&gt;
-  &lt;div
-    class=&quot;App&quot;
-  &gt;
-    &lt;h1&gt;
-      Kanban board
-    &lt;/h1&gt;
-    &lt;div
-      style=&quot;display: flex;&quot;
-    /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:84:39)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
-    </testcase>
-    <testcase classname=" Adding Tasks" name=" Adding Tasks" time="0.008">
-      <failure>Error: expect(received).toBeVisible()
-
-received value must be an HTMLElement or an SVGElement.
-Received has value: undefined
-    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:102:3)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
-    </testcase>
-    <testcase classname=" Selecting and Deselecting Tasks" name=" Selecting and Deselecting Tasks" time="0.002">
-      <failure>Error: expect(received).toBeVisible()
-
-received value must be an HTMLElement or an SVGElement.
-Received has value: undefined
-    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:112:3)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
-    </testcase>
-    <testcase classname=" Deleting Tasks" name=" Deleting Tasks" time="0.002">
-      <failure>Error: expect(received).toBeVisible()
-
-received value must be an HTMLElement or an SVGElement.
-Received has value: undefined
-    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:128:3)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
-    </testcase>
-    <testcase classname=" Moving Tasks" name=" Moving Tasks" time="0.003">
-      <failure>Error: expect(received).toBeVisible()
-
-received value must be an HTMLElement or an SVGElement.
-Received has value: undefined
-    at renderAppAndAddTasks (/projects/challenge/src/App.test.js:35:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:144:3)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at mapper (/Users/dragonee/Desktop/Test/Kanban/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at /Users/dragonee/Desktop/Test/Kanban/node_modules/p-map/index.js:46:16
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
     </testcase>
   </testsuite>
 </testsuites>
